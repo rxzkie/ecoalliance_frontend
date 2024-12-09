@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+  background-color: #1E1E1E;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
+.nav-item{
+  color:#D9D9D9;
+  margin-left: 1.5rem;
+  
+}
+
+.mi-cuenta-contenedor{
+  background-color: #333333;
+}
