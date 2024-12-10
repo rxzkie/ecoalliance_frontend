@@ -18,6 +18,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .navbar{
@@ -36,4 +37,8 @@ body {
   background-color: #333333;
 }
 
+
+.contenedor-section-3{
+  background-image: url("/imgHome/camiones-multiproposito1.png");
+}
 
