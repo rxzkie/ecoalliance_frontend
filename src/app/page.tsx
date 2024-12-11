@@ -29,8 +29,8 @@ export default function Home() {
             </section>
 
             <section className="flex mt-16">
-              <div className="w-1/2 bg-[#F5F5F5] contenedor-section3 h-200">
-                <p>Contenido</p>
+              <div className="w-1/2 bg-[#F5F5F5] contenedor-section3 h-200 px-16 py-16">
+                <Image src="/imgHome/camiones_multiproposito1.png" width={1920} height={868}  alt="Camion multipropósito"/>
               </div>
 
               <div className="w-1/2 bg-[#1E1E1E] h-200">
