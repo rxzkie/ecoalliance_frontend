@@ -1,8 +1,14 @@
 // import { useRouter } from "next/navigation";
 
+import FormularioProducto from "@/components/formularios/FormularioProducto";
 import Image from "next/image";
+import Link from "next/link";
+import { BsGeoAltFill } from "react-icons/bs";
+import { FaBloggerB, FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import { SiGmail } from "react-icons/si";
 
-const NombreProducto = () => {
+const Producto = () => {
     // const router = useRouter()
     
 
@@ -34,7 +40,7 @@ const NombreProducto = () => {
                                 <p className="mb-5">•Características: Ligera y eficiente. Ideal para tareas de jardinería o poda en áreas urbanas. <br/>
                                 •Por qué elegirla: Si buscas una opción confiable para trabajos cotidianos, esta es tu mejor elección.</p>
                                 
-                                <button className="mt-10 bg-black text-white py-2 px-8 rounded-xl">Ver productos</button>
+                                <button className="mt-10 bg-black text-white py-2 px-8 rounded-xl"><Link href={"/productos/chipeadora/chipeadora-de-disco"}>Ver productos</Link></button>
                             </div>
                         </div>
                     </div>
@@ -120,8 +126,14 @@ const NombreProducto = () => {
                     </div>
                     
                 </section>
+
+                <section className="pr-24 pl-24 ">
+                    <h2 className="text-center text-3xl mb-10">¿No estás seguro de qué <br/> modelo necesitas?</h2>
+                </section>
+
+              <FormularioProducto/>
         </main>
     )
 }
 
-export default NombreProducto;
+export default Producto;
