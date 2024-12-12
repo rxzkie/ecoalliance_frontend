@@ -1,10 +1,14 @@
-import Image from "next/image"
 
 
-const SubNavegacionSoluciones = () =>{
+type Props = {
+    hoverSoluciones: boolean;
+  }
+  
+
+const SubNavegacionSoluciones:React.FC<Props> = ({hoverSoluciones}) =>{
     return(
-        <div className="bg-[#1E1E1E] text-white ml-52 mr-72 px-8 hidden ">
-            <div className="flex justify-between pt-10 pb-10">
+        <div className={` text-white  ml-52 mr-96 px-8 ${hoverSoluciones ? 'flex' : 'hidden'} `}>
+            <div className="flex justify-between pt-10 pb-10 absolute bg-[#1E1E1E] px-10 z-30">
                 <div className="pr-2">
                     <h3 className="text-sm font-bold mb-5">MULTIPROPÓSITO</h3>
                     <p className="text-sm">Multicar</p>

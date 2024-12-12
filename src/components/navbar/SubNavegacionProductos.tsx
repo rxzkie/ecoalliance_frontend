@@ -1,10 +1,15 @@
 import Image from "next/image"
 
 
-const SubNavegacionProductos = () =>{
+type Props = {
+  hoverProductos: boolean;
+}
+
+
+const SubNavegacionProductos:React.FC<Props> = ({hoverProductos}) =>{
     return(
-        <div className="bg-[#1E1E1E] text-white ml-52 mr-96 hidden ">
-              <div className="flex justify-around pt-10 pb-10">
+        <div className={` text-white ml-52 mr-96 ${hoverProductos ? 'flex' : 'hidden'}`}>
+              <div className="z-30 bg-[#1E1E1E] px-10  absolute flex justify-around pt-10 pb-10">
                 <div>
                   <h3>MULTIPROPÓSITO</h3>
                   <div className="flex items-center mt-4 mb-3">

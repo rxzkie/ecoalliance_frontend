@@ -1,17 +1,26 @@
+
+
 import Image from "next/image"
+import { Dispatch, SetStateAction } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 
-const ModalCarrito = () =>{
+type Props = {
+    openCarrito: boolean;
+    setOpenCarrito: Dispatch<SetStateAction<boolean>>
+  }
+
+const ModalCarrito:React.FC<Props> = ({openCarrito,setOpenCarrito}) =>{
     return(
-        <div className="flex justify-end hidden">
-            <div className="bg-slate-100 w-1/3 pr-14 pl-14 pb-10 ">
+    
+        <div className={` justify-end ${ openCarrito ? "flex" : "hidden"} `}>
+            <div className="bg-white w-1/3 pr-14 pl-14 pb-10 absolute z-30">
                 <div className="flex justify-between ">
                     <div className="mt-10 flex items-center">
                         <h2 className="mr-5 text-2xl">Carro</h2>
-                        <p>(3 productos)</p>
+                        <p>(3 productos)</p>    
                     </div>
                     <div className="mt-10">
-                        <p className="text-2xl"><VscChromeClose/></p>
+                        <p className="text-2xl" onClick={()=>setOpenCarrito(false)}><VscChromeClose/></p>
                     </div>
                 </div>
                 <div className="border-b border-[#C0C0C0] mt-3"></div>

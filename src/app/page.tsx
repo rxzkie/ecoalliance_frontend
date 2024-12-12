@@ -97,7 +97,6 @@ export default function Home() {
                         <GoArrowRight className="text-white "/>
                       </div>
                     </button>
-                    
                   </div>
                 </div>
                 <div>
