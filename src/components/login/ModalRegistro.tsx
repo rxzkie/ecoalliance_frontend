@@ -23,7 +23,7 @@ const ModalRegistro:React.FC<Props> = ({openRegistro,setOpenRegistro,setOpenLogi
                                  <p>Crea tu cuenta</p>    
                              </div>
                              <div className="mt-10">
-                                 <p className="text-2xl cursor-pointer" onClick={()=>{setOpenRegistro(false)}}><VscChromeClose/></p>
+                                 <p className="text-2xl cursor-pointer" onClick={()=>{setOpenRegistro(false)}}><VscChromeClose className="cursor-pointer"/></p>
                              </div>
                          </div>
                          <div className="border-b border-[#C0C0C0] mt-3"></div>

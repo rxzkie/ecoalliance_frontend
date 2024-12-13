@@ -34,7 +34,7 @@ const ModalLogin:React.FC<Props> = ({openLogin,setOpenLogin,setOpenRegistro,setO
                         <p>Inicia sesión</p>    
                     </div>
                     <div className="mt-10">
-                        <p className="text-2xl cursor-pointer" onClick={()=>{setOpenLogin(false)}}><VscChromeClose/></p>
+                        <p className="text-2xl cursor-pointer" onClick={()=>{setOpenLogin(false)}}><VscChromeClose className="cursor-pointer"/></p>
                     </div>
                 </div>
                 <div className="border-b border-[#C0C0C0] mt-3"></div>

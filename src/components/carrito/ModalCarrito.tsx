@@ -20,7 +20,7 @@ const ModalCarrito:React.FC<Props> = ({openCarrito,setOpenCarrito}) =>{
                         <p>(3 productos)</p>    
                     </div>
                     <div className="mt-10">
-                        <p className="text-2xl" onClick={()=>setOpenCarrito(false)}><VscChromeClose/></p>
+                        <p className="text-2xl" onClick={()=>setOpenCarrito(false)}><VscChromeClose className="cursor-pointer"/></p>
                     </div>
                 </div>
                 <div className="border-b border-[#C0C0C0] mt-3"></div>

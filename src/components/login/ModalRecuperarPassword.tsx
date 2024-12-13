@@ -17,7 +17,7 @@ const ModalRecuperarPassword:React.FC<Props> = ({openRecuperarPassword,setOpenRe
                                 
                              </div>
                              <div className="mt-10">
-                                 <p className="text-2xl cursor-pointer" onClick={()=>{setOpenRecuperarPassword(false)}}><VscChromeClose/></p>
+                                 <p className="text-2xl cursor-pointer" onClick={()=>{setOpenRecuperarPassword(false)}}><VscChromeClose className="cursor-pointer"/></p>
                              </div>
                          </div>
                          <div className="border-b border-[#C0C0C0] mt-3"></div>
