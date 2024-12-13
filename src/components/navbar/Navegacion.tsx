@@ -14,6 +14,9 @@ import SubNavegacionProductos from "./SubNavegacionProductos";
 import SubNavegacionSoluciones from "./SubNavegacionSoluciones";
 import ModalCarrito from "../carrito/ModalCarrito";
 import { useState } from "react";
+import ModalLogin from "../login/ModalLogin";
+import ModalRegistro from "../login/ModalRegistro";
+import ModalRecuperarPassword from "../login/ModalRecuperarPassword";
 
   
 
@@ -22,6 +25,10 @@ export const Navbar = ()=> {
     const [openCarrito,setOpenCarrito] = useState(false)
     const [hoverProductos,setHoverProductos]=useState(false)
     const [hoverSoluciones,setHoverSoluciones]=useState(false)
+    const [openLogin,setOpenLogin] = useState(false)
+    const [openRegistro,setOpenRegistro] = useState(false)
+    const [openRecuperarPassword,setOpenRecuperarPassword] = useState(false)
+
 
     const navLinks = [
         {"nombre":"INICIO","url":"/","logo":''},
@@ -50,6 +57,18 @@ export const Navbar = ()=> {
         }
      }
 
+     const toogleCarrito = ()=>{
+      setOpenCarrito(!openCarrito)
+      setOpenLogin(false)
+      setOpenRecuperarPassword(false)
+      setOpenRegistro(false)
+     }
+
+     const toogleLogin = () =>{
+      setOpenLogin(!openLogin)
+      setOpenCarrito(false)
+     }
+
     return(
         <>
         <nav className="navbar flex items-center  justify-around relative w-full">
@@ -68,9 +87,9 @@ export const Navbar = ()=> {
           </ul>
          
       
-          <Image onClick={()=>setOpenCarrito(!openCarrito)} src="/carrito.svg" alt="Logo Carrito de compra" width={20} height={20}/>
+          <Image onClick={()=>toogleCarrito()} src="/carrito.svg" alt="Logo Carrito de compra" className="cursor-pointer" width={20} height={20}/>
 
-          <div className={`mi-cuenta-contenedor flex rounded-xl py-2 px-5`}>
+          <div className={`mi-cuenta-contenedor flex rounded-xl py-2 px-5 cursor-pointer`} onClick={()=>toogleLogin()}>
             <Image src="/user.svg" alt="Logo usuario" width={13} height={13} />
             <div className="flex ">
               <p className="nav-item mr-3">Mi cuenta</p>
@@ -88,10 +107,14 @@ export const Navbar = ()=> {
           </div>
           
       </nav>  
+
+
       <ModalCarrito openCarrito={openCarrito} setOpenCarrito={setOpenCarrito}/>
+      <ModalLogin openLogin={openLogin} setOpenLogin={setOpenLogin} setOpenRegistro={setOpenRegistro} setOpenRecuperarPassword={setOpenRecuperarPassword}/>
       <SubNavegacionProductos hoverProductos={hoverProductos}/>
       <SubNavegacionSoluciones hoverSoluciones={hoverSoluciones}/>
-
+      <ModalRegistro openRegistro={openRegistro} setOpenRegistro={setOpenRegistro} setOpenLogin={setOpenLogin}/>
+      <ModalRecuperarPassword openRecuperarPassword={openRecuperarPassword} setOpenRecuperarPassword={setOpenRecuperarPassword}/>
       
         
       

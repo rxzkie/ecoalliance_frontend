@@ -13,7 +13,7 @@ const ModalCarrito:React.FC<Props> = ({openCarrito,setOpenCarrito}) =>{
     return(
     
         <div className={` justify-end ${ openCarrito ? "flex" : "hidden"} `}>
-            <div className="bg-white w-1/3 pr-14 pl-14 pb-10 absolute z-30">
+            <div className={`bg-white w-1/3 pr-14 pl-14 pb-10 absolute z-30 border modal-carrito border-slate-200 rounded-bl-2xl`}>
                 <div className="flex justify-between ">
                     <div className="mt-10 flex items-center">
                         <h2 className="mr-5 text-2xl">Carro</h2>
@@ -107,6 +107,7 @@ const ModalCarrito:React.FC<Props> = ({openCarrito,setOpenCarrito}) =>{
 
             </div>
         </div>
+
     )
 }
 
