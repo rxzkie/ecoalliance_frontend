@@ -5,8 +5,8 @@ import { BsGeoAltFill } from "react-icons/bs"
 
 export const Footer = () =>{
     return(
-        <footer className="bg-[#1E1E1E] pb-16 pt-16 pl-60 pr-60">
-            <div className="flex pb-20 justify-between">
+        <footer className="bg-[#1E1E1E] pb-16 pt-16 ">
+            <div className="flex pb-20 justify-between pl-60 pr-60">
                 <div className="text-[#D9D9D9] pr-10">
                     <h3 className="mb-5 text-xl font-bold">Enlaces</h3>
                     <nav>
@@ -35,16 +35,18 @@ export const Footer = () =>{
                 </div>
             </div>
 
-            <div className="flex mb-10 items-center">
-                <p className="text-[#D9D9D9]">Síguenos en</p>
+            <div className="flex mb-10 items-center justify-between pl-40 pr-40">
                 <div className="flex">
-                    <Image width={28} height={28} className="w-7 h-7" src="/footer/logo_wsp.png" alt="Logo whatsApp" />
-                    <Image width={28} height={28} className="w-7 h-7" src="/footer/logo_gmail.png" alt="Logo Gmail" />
-                    <Image width={28} height={28} className="w-7 h-7" src="/footer/logo_fb.png" alt="Logo Facebook" />
-                    <Image width={28} height={28} className="w-7 h-7" src="/footer/logo_youtube.png" alt="Logo Youtube" />
-                    <Image width={28} height={28} className="w-7 h-7" src="/footer/logo_blog.png" alt="Logo Blog" />
-                    <Image width={28} height={28} className="w-7 h-7" src="/footer/logo_linkedin.png" alt="Logo Linkedin" />
-                    <Image width={28} height={28} className="w-7 h-7" src="/footer/logo_instagram.png" alt="Logo Instagram" />
+                    <p className="text-[#D9D9D9] mr-10">Síguenos en</p>
+                    <div className="flex">
+                        <Image width={28} height={28} className="w-7 h-7 mr-2" src="/footer/logo_wsp.png" alt="Logo whatsApp" />
+                        <Image width={28} height={28} className="w-7 h-7 mr-2" src="/footer/logo_gmail.png" alt="Logo Gmail" />
+                        <Image width={28} height={28} className="w-7 h-7 mr-2" src="/footer/logo_fb.png" alt="Logo Facebook" />
+                        <Image width={28} height={28} className="w-7 h-7 mr-2" src="/footer/logo_youtube.png" alt="Logo Youtube" />
+                        <Image width={28} height={28} className="w-7 h-7 mr-2" src="/footer/logo_blog.png" alt="Logo Blog" />
+                        <Image width={28} height={28} className="w-7 h-7 mr-2" src="/footer/logo_linkedin.png" alt="Logo Linkedin" />
+                        <Image width={28} height={28} className="w-7 h-7" src="/footer/logo_instagram.png" alt="Logo Instagram" />
+                </div>
                 </div>
                 <div>
                     <Image width={346} height={40} src="/footer/logo_objetivos_sustentables.png" alt="Logo objetivos sustentables" />
@@ -55,9 +57,9 @@ export const Footer = () =>{
                 </div>
             </div>
            
-            <div className="border border-white"></div>
+            <div className="border border-white ml-40 mr-40"></div>
 
-            <div className="mt-3 flex justify-between">
+            <div className="mt-3 flex justify-between pl-60 pr-60">
                 <div className="flex items-center">
                     <Image width={35} height={35} src="/footer/logo_eax.png" alt="Logo EAX" className="mr-5" />
                     <p className="flex items-center text-[#D9D9D9] text-sm">EcoAlliance © 2020 - Transformando el entorno</p>

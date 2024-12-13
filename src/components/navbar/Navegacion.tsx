@@ -52,7 +52,7 @@ export const Navbar = ()=> {
 
     return(
         <>
-        <nav className="navbar flex justify-around relative w-full">
+        <nav className="navbar flex items-center  justify-around relative w-full">
         <Image src="/LOGO-EAX.png" alt="Logotipo EAX" width={50} height={50}/>
           <ul className="flex">
             
@@ -70,11 +70,11 @@ export const Navbar = ()=> {
       
           <Image onClick={()=>setOpenCarrito(!openCarrito)} src="/carrito.svg" alt="Logo Carrito de compra" width={20} height={20}/>
 
-          <div className={`mi-cuenta-contenedor flex pr-3 pl-3`}>
+          <div className={`mi-cuenta-contenedor flex rounded-xl py-2 px-5`}>
             <Image src="/user.svg" alt="Logo usuario" width={13} height={13} />
-            <div className="flex">
+            <div className="flex ">
               <p className="nav-item mr-3">Mi cuenta</p>
-              <Image src="/flecha-abajo.svg" alt="Logo flecha" width={13} height={13} />
+              {/* <Image src="/flecha-abajo.svg" alt="Logo flecha" width={13} height={13} /> */}
             </div>
           </div>
           
