@@ -3,10 +3,6 @@
 import FormularioProducto from "@/components/formularios/FormularioProducto";
 import Image from "next/image";
 import Link from "next/link";
-import { BsGeoAltFill } from "react-icons/bs";
-import { FaBloggerB, FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone, FaWhatsapp, FaYoutube } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
-import { SiGmail } from "react-icons/si";
 
 const Producto = () => {
     // const router = useRouter()

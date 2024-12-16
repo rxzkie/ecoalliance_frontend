@@ -1,6 +1,5 @@
 
 
-import Image from "next/image"
 import { Dispatch, SetStateAction } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 
